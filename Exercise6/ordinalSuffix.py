@@ -1,16 +1,21 @@
 def ordinalSuffix(number):
     number_str = str(number)
+    # 11, 12, and 13 have the suffix th:
     if number_str[-2:] in ('11','12','13'):
         return number_str + 'th'
+    # Numbers that end with 1 have the suffix st:
     if number_str[-1] == '1':
         return number_str + 'st'
+    # Numbers that end with 2 have the suffix nd:
     if number_str[-1] == '2':
         return number_str + 'nd'
+    # Numbers that end with 3 have the suffix rd:
     if number_str[-1] == '3':
         return number_str + 'rd'
+    # All other numbers end with th:
     return number_str + 'th'
 
-# assert ordinalSuffix(0) == '0th'
+assert ordinalSuffix(0) == '0th'
 assert ordinalSuffix(1) == '1st'
 assert ordinalSuffix(2) == '2nd'
 assert ordinalSuffix(3) == '3rd'
