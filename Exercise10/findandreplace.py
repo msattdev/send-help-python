@@ -11,8 +11,6 @@ def findAndReplace(text, oldtext, newtext):
             i += 1
     return replacedText
         
-
-
 assert findAndReplace('The fox', 'fox', 'dog') == 'The dog'
 assert findAndReplace('fox', 'fox', 'dog') == 'dog'
 assert findAndReplace('Firefox', 'fox', 'dog') == 'Firedog'
