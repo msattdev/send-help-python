@@ -1,6 +1,6 @@
 def getHoursMinutesSeconds(totalSeconds):
     if totalSeconds == 0:
-        return "0h0m0s"
+        return '0s'
     hours = 0
     while totalSeconds >= 3600:
         hours += 1
